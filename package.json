@@ -20,6 +20,7 @@
   "license": "ECL-2.0",
   "devDependencies": {
     "git-cz": "^4.9.0",
+    "prettier": "^3.2.4",
     "vitepress": "^1.0.0-rc.40",
     "vue": "^3.4.15"
   }
