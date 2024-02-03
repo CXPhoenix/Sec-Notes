@@ -20,6 +20,7 @@
   "license": "ECL-2.0",
   "devDependencies": {
     "autoprefixer": "^10.4.17",
+    "crypto-js": "^4.2.0",
     "custom-properties": "^1.0.1",
     "flexbox": "^0.0.3",
     "git-cz": "^4.9.0",
