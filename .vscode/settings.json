@@ -4,10 +4,5 @@
   "editor.formatOnPaste": true,
   "editor.quickSuggestions": {
     "strings": "on"
-  },
-  "emmet.includeLanguages": {
-    "vue-html": "html",
-    "vue": "html",
-    "javascript": "javascriptreact"
   }
 }
