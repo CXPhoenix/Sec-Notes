@@ -17,7 +17,8 @@ const sidebar_traversal = (
             ? f.name.replace(index_regex, `${sidebar_array[0].text} README`)
             : path
                 .basename(f.name, path.extname(f.name))
-                .replace(name_regex, ""),
+                .replace(name_regex, "")
+                .replace("_", " "),
           link: path.join(
             "/",
             cat_name,
