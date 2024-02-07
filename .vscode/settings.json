@@ -4,5 +4,6 @@
   "editor.formatOnPaste": true,
   "editor.quickSuggestions": {
     "strings": "on"
-  }
+  },
+  "MarkdownPaste.path": "${workspaceRoot}/docs/public/${relativeFileDirname|docs}"
 }
