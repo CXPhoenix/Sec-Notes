@@ -1,3 +1,7 @@
+---
+outline: [2, 3]
+---
+
 # Wargame 筆記
 
 想知道更多關於 Wargame？
