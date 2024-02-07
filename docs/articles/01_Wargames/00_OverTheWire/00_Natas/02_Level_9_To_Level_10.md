@@ -38,7 +38,7 @@ if($key != "") {
 
 3. 第二組 `if/else` 中出現了一個指令： `passthru`，可以查詢一下這個指令是什麼：
 
-```php:line_numbers
+```php:line-numbers
 <?
 $key = "";
 
