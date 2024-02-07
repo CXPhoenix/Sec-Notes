@@ -19,6 +19,34 @@ export default defineConfig({
       provider: "local",
     },
   },
+  head: [
+    ["mata", { property: "og:title", content: "CXPh03n1x's Sec. Notes" }],
+    [
+      "mata",
+      {
+        property: "og:description",
+        content: "A Cyber security notes about CTF, wargames, and more.",
+      },
+    ],
+    [
+      "mata",
+      {
+        property: "og:image",
+        content:
+          "https://sec-notes.cxphoenix.fhsh.taipei/Home/Sec-Notes-logo.png",
+      },
+    ],
+    ["mata", { property: "og:locale", content: "zh-TW" }],
+    ["mata", { property: "og:type", content: "website" }],
+    [
+      "mata",
+      {
+        property: "og:url",
+        content: "https://sec-notes.cxphoenix.fhsh.taipei/",
+      },
+    ],
+    ["mata", { property: "og:site_name", content: "Sec.Notes" }],
+  ],
   lastUpdated: true,
   vite: {
     resolve: {
