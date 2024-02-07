@@ -12,11 +12,26 @@ outline: [2, 3]
 
 website: [http://natas0.natas.labs.overthewire.org](http://natas0.natas.labs.overthewire.org)
 
+### Background Knowledges
+
+- 如何使用瀏覽器檢查原始碼。
+
 ### Solve
 
 1. 打開 `原始碼` 或 `Dev tools (Inspector)`
    ![](/articles/01_Wargames/00_OverTheWire/00_Natas/00_Level_0_To_Level_3/20240207132311.png)
 2. 有答案了...
+
+### Thoughts
+
+標準的 comment leak。
+
+雖然很蠢，但是也真的碰過這麼蠢的。
+
+> [!WARNING] 現代的新蠢法
+> 現在工程師真的比較少蠢到會有 comment leak 的問題。
+> 但是現在的新蠢法就是 .git leak
+> 有興趣可以看這一篇 [HackeTricks -- Git](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/git)
 
 ### Answer
 
@@ -34,12 +49,27 @@ password: `g9D9cREhslqBKtcA2uocGHPfMZVzeFK6`
 
 website: [http://natas1.natas.labs.overthewire.org](http://natas1.natas.labs.overthewire.org)
 
+### Background Knowledges
+
+- 如何使用瀏覽器檢查原始碼。
+- 如何不用「右鍵」查看原始碼。
+
 ### Solve
 
 > [!NOTE]
 > 本題提示說「右鍵被鎖住」，但是...看原始碼誰說一定要右鍵？
 
 1. 同 `Level 0` 解法
+
+### Thoughts
+
+現在雖然真的比較沒人這麼玩了...
+
+但是真的不要以為把右鍵鎖起來就萬事大吉了...
+
+包含鎖 dev-tool 等等...
+
+最好的防禦就是：不要蠢到把機敏資料放到前端。
 
 ### Answer
 
@@ -56,6 +86,10 @@ password: `h4ubbcXrWqsTo7GGnnUMLppXbOogfBZ7`
 ![](/articles/01_Wargames/00_OverTheWire/00_Natas/00_Level_0_To_Level_3/20240207132828.png)
 
 website: [http://natas2.natas.labs.overthewire.org](http://natas2.natas.labs.overthewire.org)
+
+### Background Knowledges
+
+- 網站的結構與路徑。
 
 ### Solve
 
@@ -89,6 +123,11 @@ password: `G6ctbMJ5Nb4cbFwhpMPSvxGHhQ7I6W8Q`
 
 website: [http://natas3.natas.labs.overthewire.org](http://natas3.natas.labs.overthewire.org)
 
+### Background Knowledges
+
+- Google 爬蟲的爬取機制
+- 網站檔案訪問
+
 ### Solve
 
 > [!NOTE]
@@ -101,6 +140,14 @@ website: [http://natas3.natas.labs.overthewire.org](http://natas3.natas.labs.ove
 > ![](/articles/01_Wargames/00_OverTheWire/00_Natas/00_Level_0_To_Level_3/20240207133937.png)
 
 1. 同 Level 2 解法。
+
+### Thoughts
+
+`robots.txt` 固然可以防範爬蟲爬到這個資料夾，避免被 Google Hacking。
+
+但是忘記鎖權限...那就無解了..
+
+所以，記得要把不用到的東西上鎖。
 
 ### Answer
 
