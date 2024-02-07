@@ -8,6 +8,10 @@
 
 - ### [OverTheWire - Natas](https://overthewire.org/wargames/natas/) Challenge
 
+  [Notes](/articles/01_Wargames/00_OverTheWire/00_Natas/) --
+
+  - [Level 0 To Level 2](/articles/01_Wargames/00_OverTheWire/00_Natas/00_Level_0_To_Level_2.html)
+
 ## 歷史進行
 
 ### 尚無
