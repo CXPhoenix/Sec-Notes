@@ -10,7 +10,7 @@
 
   [Notes](/articles/01_Wargames/00_OverTheWire/00_Natas/) --
 
-  - [Level 0 To Level 2](/articles/01_Wargames/00_OverTheWire/00_Natas/00_Level_0_To_Level_2.html)
+  - [Level 0 To Level 3](/articles/01_Wargames/00_OverTheWire/00_Natas/00_Level_0_To_Level_3.html)
 
 ## 歷史進行
 
