@@ -10,6 +10,8 @@ outline: [2, 3]
 
 ![](/articles/01_Wargames/00_OverTheWire/00_Natas/00_Level_0_To_Level_2/20240207131446.png)
 
+website: [http://natas0.natas.labs.overthewire.org](http://natas0.natas.labs.overthewire.org)
+
 ### Solve
 
 1. 打開 `原始碼` 或 `Dev tools (Inspector)`
@@ -29,6 +31,8 @@ password: `g9D9cREhslqBKtcA2uocGHPfMZVzeFK6`
 ### Challenge Description
 
 ![](/articles/01_Wargames/00_OverTheWire/00_Natas/00_Level_0_To_Level_2/20240207132548.png)
+
+website: [http://natas1.natas.labs.overthewire.org](http://natas1.natas.labs.overthewire.org)
 
 ### Solve
 
@@ -50,6 +54,8 @@ password: `h4ubbcXrWqsTo7GGnnUMLppXbOogfBZ7`
 ### Challenge Description
 
 ![](/articles/01_Wargames/00_OverTheWire/00_Natas/00_Level_0_To_Level_2/20240207132828.png)
+
+website: [http://natas2.natas.labs.overthewire.org](http://natas2.natas.labs.overthewire.org)
 
 ### Solve
 
@@ -80,6 +86,8 @@ password: `G6ctbMJ5Nb4cbFwhpMPSvxGHhQ7I6W8Q`
 ### Challenge Description
 
 ![](/articles/01_Wargames/00_OverTheWire/00_Natas/00_Level_0_To_Level_2/20240207133627.png)
+
+website: [http://natas3.natas.labs.overthewire.org](http://natas3.natas.labs.overthewire.org)
 
 ### Solve
 
