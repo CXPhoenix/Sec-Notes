@@ -48,11 +48,13 @@ export default defineConfig({
     ["mata", { property: "og:site_name", content: "Sec.Notes" }],
   ],
   lastUpdated: true,
+  appearance: "force-dark",
   vite: {
     resolve: {
       alias: {
         "@components": path.resolve(__dirname, "./Theme/Components"),
         "@style": path.resolve(__dirname, "./Theme/tailwindcss.css"),
+        "@imgs": path.resolve(__dirname, "./Theme/assets/images"),
       },
     },
   },
