@@ -14,7 +14,7 @@ website: [http://natas0.natas.labs.overthewire.org](http://natas0.natas.labs.ove
 
 ### Background Knowledges
 
-- 如何使用瀏覽器檢查原始碼。
+-   如何使用瀏覽器檢查原始碼。
 
 ### Solve
 
@@ -51,8 +51,8 @@ website: [http://natas1.natas.labs.overthewire.org](http://natas1.natas.labs.ove
 
 ### Background Knowledges
 
-- 如何使用瀏覽器檢查原始碼。
-- 如何不用「右鍵」查看原始碼。
+-   如何使用瀏覽器檢查原始碼。
+-   如何不用「右鍵」查看原始碼。
 
 ### Solve
 
@@ -89,7 +89,7 @@ website: [http://natas2.natas.labs.overthewire.org](http://natas2.natas.labs.ove
 
 ### Background Knowledges
 
-- 網站的結構與路徑。
+-   網站的結構與路徑。
 
 ### Solve
 
@@ -125,8 +125,8 @@ website: [http://natas3.natas.labs.overthewire.org](http://natas3.natas.labs.ove
 
 ### Background Knowledges
 
-- Google 爬蟲的爬取機制
-- 網站檔案訪問
+-   Google 爬蟲的爬取機制
+-   網站檔案訪問
 
 ### Solve
 
@@ -144,6 +144,12 @@ website: [http://natas3.natas.labs.overthewire.org](http://natas3.natas.labs.ove
 ### Thoughts
 
 `robots.txt` 固然可以防範爬蟲爬到這個資料夾，避免被 Google Hacking。
+
+::: tip 想了解更多？
+如果你想對於 `robots.txt` 了解更多，可以看這一篇：
+
+<preview-card url="https://www.techbang.com/posts/113231-robotstxt-internet-ai-balance" title="一份君子協議的robots.txt維持了網際網路30年來的秩序，但AI的出現破壞了這種信任和平衡" />
+:::
 
 但是忘記鎖權限...那就無解了..
 
