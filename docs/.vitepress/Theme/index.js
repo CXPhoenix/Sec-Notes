@@ -6,6 +6,6 @@ import PreviewCard from "@components/PreviewCard.vue";
 export default {
     extends: DefaultTheme,
     enhanceApp({ app }) {
-        app.component("preview-card", PreviewCard);
+        // app.component("preview-card", PreviewCard);
     },
 };
