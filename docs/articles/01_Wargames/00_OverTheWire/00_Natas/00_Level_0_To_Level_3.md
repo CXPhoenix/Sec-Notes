@@ -2,10 +2,6 @@
 outline: [2, 3]
 ---
 
-<script setup>
-import PreviewCard from "@components/PreviewCard.vue"
-</script>
-
 # Level 0 To Level 3
 
 ## Level 0

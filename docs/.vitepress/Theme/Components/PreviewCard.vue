@@ -16,7 +16,7 @@ const { url, title, imgsrc } = defineProps(["url", "title", "imgsrc"]);
                     />
                 </figure>
                 <span class="pt-0 text-[8px] text-slate-100">{{ url }}</span>
-                <div class="p-2 pl-4 pt-6">
+                <div class="p-2 py-3">
                     <p class="text-slate-300">
                         {{ title ? title : url }}
                     </p>
