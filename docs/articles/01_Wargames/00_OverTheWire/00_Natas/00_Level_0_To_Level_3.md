@@ -149,17 +149,15 @@ website: [http://natas3.natas.labs.overthewire.org](http://natas3.natas.labs.ove
 
 `robots.txt` 固然可以防範爬蟲爬到這個資料夾，避免被 Google Hacking。
 
-::: tip 想了解更多？
-如果你想對於 `robots.txt` 了解更多，可以看這一篇：
-
-<ClientOnly>
-<PreviewCard url="https://www.techbang.com/posts/113231-robotstxt-internet-ai-balance" title="一份君子協議的robots.txt維持了網際網路30年來的秩序，但AI的出現破壞了這種信任和平衡" />
-</ClientOnly>
-:::
-
 但是忘記鎖權限...那就無解了..
 
 所以，記得要把不用到的東西上鎖。
+
+::: tip 想了解更多？
+如果你想對於 `robots.txt` 了解更多，可以看這一篇：
+
+<PreviewCard url="https://www.techbang.com/posts/113231-robotstxt-internet-ai-balance" title="一份君子協議的robots.txt維持了網際網路30年來的秩序，但AI的出現破壞了這種信任和平衡" />
+:::
 
 ### Answer
 
