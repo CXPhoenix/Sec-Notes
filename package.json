@@ -1,36 +1,36 @@
 {
-  "name": "sec-notes",
-  "version": "0.1.0",
-  "description": "The security notes about CTF, wargames, knowledges, and more...",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
-    "commit": "git-cz"
-  },
-  "keywords": [
-    "Cyber",
-    "Security",
-    "CTF",
-    "Wargames"
-  ],
-  "author": "CXPh03n1x",
-  "license": "ECL-2.0",
-  "devDependencies": {
-    "autoprefixer": "^10.4.17",
-    "crypto-js": "^4.2.0",
-    "custom-properties": "^1.0.1",
-    "daisyui": "^4.7.2",
-    "flexbox": "^0.0.3",
-    "git-cz": "^4.9.0",
-    "postcss": "^8.4.33",
-    "postcss-preset-env": "^9.3.0",
-    "prettier": "^3.2.4",
-    "prettier-plugin-tailwindcss": "^0.5.11",
-    "tailwindcss": "^3.4.1",
-    "vitepress": "^1.0.0-rc.40",
-    "vue": "^3.4.15"
-  }
+    "name": "sec-notes",
+    "version": "0.1.0",
+    "description": "The security notes about CTF, wargames, knowledges, and more...",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "docs:dev": "vitepress dev docs",
+        "docs:build": "vitepress build docs --base ./",
+        "docs:preview": "vitepress preview docs",
+        "commit": "git-cz"
+    },
+    "keywords": [
+        "Cyber",
+        "Security",
+        "CTF",
+        "Wargames"
+    ],
+    "author": "CXPh03n1x",
+    "license": "ECL-2.0",
+    "devDependencies": {
+        "autoprefixer": "^10.4.17",
+        "crypto-js": "^4.2.0",
+        "custom-properties": "^1.0.1",
+        "daisyui": "^4.7.2",
+        "flexbox": "^0.0.3",
+        "git-cz": "^4.9.0",
+        "postcss": "^8.4.33",
+        "postcss-preset-env": "^9.3.0",
+        "prettier": "^3.2.4",
+        "prettier-plugin-tailwindcss": "^0.5.11",
+        "tailwindcss": "^3.4.1",
+        "vitepress": "^1.0.0-rc.40",
+        "vue": "^3.4.15"
+    }
 }

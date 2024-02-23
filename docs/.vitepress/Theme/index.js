@@ -1,7 +1,8 @@
 import DefaultTheme from "vitepress/theme";
-import "@style";
+// import "@style";
+import "./tailwindcss.css";
 
-import PreviewCard from "@components/PreviewCard.vue";
+import PreviewCard from "./Components/PreviewCard.vue";
 
 export default {
     extends: DefaultTheme,

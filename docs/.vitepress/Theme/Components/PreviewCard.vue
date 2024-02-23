@@ -1,6 +1,5 @@
 <script setup>
-import { reactive, onMounted } from "vue";
-import previewImg from "@imgs/web-preview-dark.webp";
+import previewImg from "../assets/images/web-preview-dark.webp";
 
 const { url, title, imgsrc } = defineProps(["url", "title", "imgsrc"]);
 </script>
