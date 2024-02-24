@@ -2,7 +2,7 @@
 outline: [2, 3]
 ---
 
-# Level 0 To Level 3
+# Level 0 To Level 3{.text-blue-300}
 
 ## Level 0
 
