@@ -14,8 +14,8 @@ website: [http://natas9.natas.labs.overthewire.org/](http://natas9.natas.labs.ov
 
 ### Background Knowledges
 
-- PHP Command Injection 漏洞解析
-- Linux 基本指令
+-   PHP Command Injection 漏洞解析
+-   Linux 基本指令
 
 ### Solve
 
@@ -96,11 +96,11 @@ website: [http://natas10.natas.labs.overthewire.org/](http://natas10.natas.labs.
 
 ### Background Knowledges
 
-- Linux 的指令進階應用
+-   Linux 的指令進階應用
 
 ### Solve
 
-> [NOTE]
+> [!NOTE]
 > 這一題跟上一題一樣，但是要找到另一種 payload 才能處理。
 > 這邊給個提示：**grep -i** 的用法很重要。
 
