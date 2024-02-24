@@ -2,7 +2,7 @@
 outline: [2, 3]
 ---
 
-# Level 0 To Level 3{.text-blue-300}
+# Level 0 To Level 3
 
 ## Level 0
 
@@ -152,10 +152,7 @@ website: [http://natas3.natas.labs.overthewire.org](http://natas3.natas.labs.ove
 ::: tip 想了解更多？
 如果你想對於 `robots.txt` 了解更多，可以看這一篇：
 
-<!-- [一份君子協議的robots.txt維持了網際網路30年來的秩序，但AI的出現破壞了這種信任和平衡](https://www.techbang.com/posts/113231-robotstxt-internet-ai-balance) -->
-
 <PreviewCard url="https://www.techbang.com/posts/113231-robotstxt-internet-ai-balance" title="一份君子協議的robots.txt維持了網際網路30年來的秩序，但AI的出現破壞了這種信任和平衡" />
-
 :::
 
 ### Answer

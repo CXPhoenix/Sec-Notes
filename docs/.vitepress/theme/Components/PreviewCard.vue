@@ -5,9 +5,15 @@ const { url, title, imgsrc } = defineProps(["url", "title", "imgsrc"]);
 </script>
 
 <template>
-    <div class="mx-auto flex w-full justify-center px-4 py-2">
-        <a :href="url" target="_blank" class="w-full rounded-md shadow-xl">
-            <div class="bg-base-100 image-full mx-auto max-w-[75%]">
+    <div
+        class="mx-auto w-full max-w-[90%] rounded-md border-2 border-slate-400/10 p-2 shadow-xl"
+    >
+        <a
+            :href="url"
+            target="_blank"
+            class="flext w-full flex-col items-start"
+        >
+            <div class="">
                 <figure>
                     <img
                         :src="imgsrc ? imgsrc : previewImg"
@@ -16,9 +22,9 @@ const { url, title, imgsrc } = defineProps(["url", "title", "imgsrc"]);
                 </figure>
                 <span class="pt-0 text-[8px] text-slate-100">{{ url }}</span>
                 <div class="p-2 py-3">
-                    <p class="text-slate-300">
+                    <span class="md:text-lg">
                         {{ title ? title : url }}
-                    </p>
+                    </span>
                 </div>
             </div>
         </a>
