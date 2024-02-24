@@ -11,9 +11,9 @@ const { url, title, imgsrc } = defineProps(["url", "title", "imgsrc"]);
         <a
             :href="url"
             target="_blank"
-            class="flext w-full flex-col items-start"
+            class="flext w-full flex-col items-start gap-3"
         >
-            <div class="">
+            <div>
                 <figure>
                     <img
                         :src="imgsrc ? imgsrc : previewImg"
@@ -21,11 +21,11 @@ const { url, title, imgsrc } = defineProps(["url", "title", "imgsrc"]);
                     />
                 </figure>
                 <span class="pt-0 text-[8px] text-slate-100">{{ url }}</span>
-                <div class="p-2 py-3">
-                    <span class="md:text-lg">
-                        {{ title ? title : url }}
-                    </span>
-                </div>
+            </div>
+            <div class="p-2 py-3">
+                <span class="md:text-lg">
+                    {{ title ? title : url }}
+                </span>
             </div>
         </a>
     </div>
