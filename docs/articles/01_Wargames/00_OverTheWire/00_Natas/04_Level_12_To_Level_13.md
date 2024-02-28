@@ -357,6 +357,10 @@ Choose a JPEG to upload (max 1KB):<br/>
 
 真的值得好好去了解。
 
+另外你也可以去了解 OWASP 的說明文章：
+
+<PreviewCard title="Unrestricted File Upload | OWASP Foundation" desc="Unrestricted File Upload on the main website for The OWASP Foundation. OWASP is a nonprofit foundation that works to improve the security of software." url="https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload" imgsrc="https://owasp.org/assets/images/logo.png" />
+
 ### Answer
 
 ::: details 答案
