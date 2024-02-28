@@ -2,7 +2,7 @@
 outline: [2, 3]
 ---
 
-# Level 4 To Level 8
+# Level 4 To Level 8 Write-ups
 
 ## Level 4
 
@@ -14,8 +14,8 @@ website: [http://natas4.natas.labs.overthewire.org/](http://natas4.natas.labs.ov
 
 ### Background Knowledges
 
-- HTTP 傳輸資料的型態
-- 知道網站如何判斷你從哪裡來
+-   HTTP 傳輸資料的型態
+-   知道網站如何判斷你從哪裡來
 
 ### Solve
 
@@ -55,8 +55,8 @@ website: [http://natas5.natas.labs.overthewire.org/index.php](http://natas5.nata
 
 ### Background Knowledges
 
-- 了解 HTTP 對於「使用者狀態」的處理。
-- 理解 `Boolean` 的數字型態。
+-   了解 HTTP 對於「使用者狀態」的處理。
+-   理解 `Boolean` 的數字型態。
 
 ### Solve
 
@@ -104,9 +104,9 @@ website: [http://natas6.natas.labs.overthewire.org/](http://natas6.natas.labs.ov
 
 ### Background Knowledge
 
-- 程式語言的基礎知識
-- PHP 的網路語法知識
-- 網路傳輸方法 (method) 的知識
+-   程式語言的基礎知識
+-   PHP 的網路語法知識
+-   網路傳輸方法 (method) 的知識
 
 ### Solve
 
@@ -212,9 +212,9 @@ website: [http://natas7.natas.labs.overthewire.org/](http://natas7.natas.labs.ov
 
 ### Background Knowledges
 
-- 基本檔案結構
-- 基本 Injection 漏洞識別
-- 基本的 URL 解析知識
+-   基本檔案結構
+-   基本 Injection 漏洞識別
+-   基本的 URL 解析知識
 
 ### Solve
 
@@ -264,8 +264,8 @@ website: [https://natas8.natas.labs.overthewire.org/](https://natas8.natas.labs.
 
 ### Background Knowledges
 
-- 基本的 php 語法。
-- 編解碼的基礎。
+-   基本的 php 語法。
+-   編解碼的基礎。
 
 ### Solve
 

@@ -2,7 +2,7 @@
 outline: [2, 3]
 ---
 
-# Level 9 To Level 10
+# Level 9 To Level 10 Write-ups
 
 ## Level 9
 
