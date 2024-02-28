@@ -1,7 +1,12 @@
 <script setup>
 import previewImg from "../assets/images/web-preview-dark.webp";
 
-const { url, title, imgsrc } = defineProps(["url", "title", "imgsrc"]);
+const { url, title, imgsrc, desc } = defineProps([
+    "url",
+    "title",
+    "imgsrc",
+    "desc",
+]);
 </script>
 
 <template>
@@ -23,11 +28,20 @@ const { url, title, imgsrc } = defineProps(["url", "title", "imgsrc"]);
                 </figure>
                 <span class="pt-0 text-[8px] text-slate-100">{{ url }}</span>
             </div>
-            <div class="p-2 py-3">
-                <span class="md:text-lg">
+            <div class="flex flex-col items-start p-2 py-3">
+                <span class="text-lg underline underline-offset-2 md:text-xl">
                     {{ title ? title : url }}
+                </span>
+                <span class="desc-style text-xs text-purple-100 md:text-base">
+                    {{ desc ? desc : "" }}
                 </span>
             </div>
         </a>
     </div>
 </template>
+
+<style scoped>
+.vp-doc a {
+    text-decoration: none;
+}
+</style>
