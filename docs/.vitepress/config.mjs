@@ -50,4 +50,7 @@ export default defineConfig({
     ],
     lastUpdated: true,
     appearance: "force-dark",
+    markdown: {
+        math: true,
+    },
 });
