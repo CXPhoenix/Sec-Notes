@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-import path from "path";
+import { withMermaid } from "vitepress-plugin-mermaid";
 import gen_top_nav from "./Utils/top_nav_gen.js";
 import gen_sidebar from "./Utils/sidebar_gen.js";
 
@@ -52,5 +52,9 @@ export default defineConfig({
     appearance: "force-dark",
     markdown: {
         math: true,
+    },
+    mermaid: {},
+    mermaidPlugin: {
+        class: "mermaid my-class",
     },
 });
