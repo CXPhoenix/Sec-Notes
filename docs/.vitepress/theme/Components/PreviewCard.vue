@@ -18,6 +18,7 @@ const { url, title, imgsrc } = defineProps(["url", "title", "imgsrc"]);
                     <img
                         :src="imgsrc ? imgsrc : previewImg"
                         alt="Default Preview Image"
+                        class="mx-auto max-h-80"
                     />
                 </figure>
                 <span class="pt-0 text-[8px] text-slate-100">{{ url }}</span>
