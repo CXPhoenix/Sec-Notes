@@ -315,29 +315,39 @@ Choose a JPEG to upload (max 1KB):<br/>
 
 <PreviewCard title="BMP file format" url="https://en.wikipedia.org/wiki/BMP_file_format" imgsrc="/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229004747.png" />
 
-我們先把原本的 [`evil.php`](#evil-code) 內容貼到 `HexEd.it` 裡面：
+所以接下來我們就是：
 
-![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005311.png)
+1. 我們先把原本的 [`evil.php`](#evil-code) 內容貼到 `HexEd.it` 裡面：
 
-然後我們加上 `.bmp` 的 file header：
+    ![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005311.png)
 
-![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005421.png)
+2. 然後我們加上 `.bmp` 的 file header：
 
-![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005435.png)
+    ![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005421.png)
 
-![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005556.png)
+    ![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005435.png)
 
-下載下來後重新上傳（記得呼叫 `<input name="filename" />` 改檔名）：
+    ![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005556.png)
 
-![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005847.png)
+    > [!NOTE]
+    >
+    > 這邊為什麼是插入 14 個位元組 (byte) 呢？
+    >
+    > 如果你有去看 `.bmp` 的 file header 你會注意到，他全部所需的資料加起來，就是 14 bytes。
+    >
+    > 所以我就直接加 14 bytes 囉！
 
-![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005858.png)
+3. 下載下來後重新上傳（記得呼叫 `<input name="filename" />` 改檔名）：
 
-![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005915.png)
+    ![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005847.png)
 
-最後就是跟 `Level 12` 一樣下指令（記得搜尋的地方改成 `natas14` 就是了），就可以通過囉～
+    ![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005858.png)
 
-![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229011640.png)
+    ![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005915.png)
+
+4. 最後就是跟 `Level 12` 一樣下指令（記得搜尋的地方改成 `natas14` 就是了），這樣就找到密碼囉！
+
+    ![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229011640.png)
 
 ### Thoughts
 
