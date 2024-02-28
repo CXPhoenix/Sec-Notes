@@ -8,7 +8,7 @@ outline: [2, 3]
 
 ### Challenge Description
 
-![](../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228224624.png)
+![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228224624.png)
 
 website: http://natas12.natas.labs.overthewire.org/
 
@@ -140,33 +140,33 @@ if(isset($_GET['cmd'])) {
 這邊若是你正常的上傳，你會出現以下的問題：
 
 > [!NOTE] 1. 上傳
-> ![](../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228233644.png)
+> ![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228233644.png)
 
 > [!WARNING] 2. 顯示網頁
 >
-> _這個檔名怪怪的_ > ![](../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228233720.png)
+> _這個檔名怪怪的_ > ![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228233720.png)
 
 > [!CAUTION] 3.... 看不到網頁 🫠🫠🫠
-> ![](../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228233803.png)
+> ![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228233803.png)
 
 為什麼會這樣咧？原因是因為在上傳時，他的檔案名稱的控制不是由「你選擇的檔案名稱」來控制，而是由一個 `<input>` 標籤來處理。
 
 它藏在哪呢？就在這個傳送的 `<form>` 裡面啦！但是他被 hidden 起來了，所以我們要用 Inspetor (Development Tool) 來轉換。
 
-![](../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228234350.png)
+![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228234350.png)
 
-![](../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228234433.png)
+![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228234433.png)
 
 然後上傳就可以啦～
 
 > [!TIP] 上傳檔案並且修正成正確的副檔名
-> ![](../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228234505.png)
+> ![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228234505.png)
 
 > [!IMPORTANT] 取得 URL
-> ![](../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228234518.png)
+> ![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228234518.png)
 
 > [!IMPORTANT] 成功取得 php
-> ![](../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228234534.png)
+> ![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228234534.png)
 
 #### 四、輸入惡意命令
 
@@ -190,7 +190,7 @@ if(isset($_GET['cmd'])) {
 ?cmd=whoami
 ```
 
-![](../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228235322.png)
+![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228235322.png)
 
 確認可以出結果後，我們就直接來尋找我們要的密碼。
 
@@ -202,7 +202,7 @@ if(isset($_GET['cmd'])) {
 ?cmd=cat /etc/natas_webpass/natas13
 ```
 
-![](../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228235940.png)
+![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240228235940.png)
 
 找到答案啦～
 
@@ -230,7 +230,7 @@ password: `lW3jYRI02ZKDBb8VtQBU1f6eDRo6WEj9`
 
 ### Challenge Description
 
-![](../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229001947.png)
+![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229001947.png)
 
 website: http://natas13.natas.labs.overthewire.org/
 
@@ -313,31 +313,31 @@ Choose a JPEG to upload (max 1KB):<br/>
 
 關於 `.bmp` 的 file header 特徵值，可以查看以下內容：
 
-<PreviewCard title="BMP file format" url="https://en.wikipedia.org/wiki/BMP_file_format" imgsrc="../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229004747.png" />
+<PreviewCard title="BMP file format" url="https://en.wikipedia.org/wiki/BMP_file_format" imgsrc="/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229004747.png" />
 
 我們先把原本的 [`evil.php`](#evil-code) 內容貼到 `HexEd.it` 裡面：
 
-![](../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005311.png)
+![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005311.png)
 
 然後我們加上 `.bmp` 的 file header：
 
-![](../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005421.png)
+![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005421.png)
 
-![](../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005435.png)
+![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005435.png)
 
-![](../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005556.png)
+![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005556.png)
 
 下載下來後重新上傳（記得呼叫 `<input name="filename" />` 改檔名）：
 
-![](../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005847.png)
+![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005847.png)
 
-![](../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005858.png)
+![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005858.png)
 
-![](../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005915.png)
+![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229005915.png)
 
 最後就是跟 `Level 12` 一樣下指令（記得搜尋的地方改成 `natas14` 就是了），就可以通過囉～
 
-![](../../../../public/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229011640.png)
+![](/articles/01_Wargames/00_OverTheWire/00_Natas/04_Level_12_To_Level_13/20240229011640.png)
 
 ### Thoughts
 
