@@ -220,7 +220,7 @@ echo $encrypt_cookie; # OUTPUT: MGw7JCQ5OC04PT8jOSpqdmk3LT9pYmouLC0nICQ8anZpbS4q
 
 為什麼？因為 `XOR` 具有特殊的 `可逆性`：
 
-::: tip XOR 邏輯推論
+::: tip **XOR 邏輯推論**
 $\text{if } A \oplus B = C;$
 
 $\hspace{1em}\text{then}$
