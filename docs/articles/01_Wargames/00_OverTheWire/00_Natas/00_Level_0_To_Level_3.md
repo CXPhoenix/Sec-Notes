@@ -29,8 +29,11 @@ website: [http://natas0.natas.labs.overthewire.org](http://natas0.natas.labs.ove
 雖然很蠢，但是也真的碰過這麼蠢的。
 
 > [!WARNING] 現代的新蠢法
+>
 > 現在工程師真的比較少蠢到會有 comment leak 的問題。
+>
 > 但是現在的新蠢法就是 .git leak
+>
 > 有興趣可以看這一篇 [HackeTricks -- Git](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/git)
 
 ### Answer
@@ -95,10 +98,14 @@ website: [http://natas2.natas.labs.overthewire.org](http://natas2.natas.labs.ove
 
 1. 本題說：這個頁面沒有任何東西，但是我們還是翻一下原始碼。
 2. 我們可以看到有一個圖片在 `/files/` 資料夾中。
-   ![](/articles/01_Wargames/00_OverTheWire/00_Natas/00_Level_0_To_Level_3/20240207133046.png)
-   ![](/articles/01_Wargames/00_OverTheWire/00_Natas/00_Level_0_To_Level_3/20240207133102.png)
+
+    ![](/articles/01_Wargames/00_OverTheWire/00_Natas/00_Level_0_To_Level_3/20240207133046.png)
+    ![](/articles/01_Wargames/00_OverTheWire/00_Natas/00_Level_0_To_Level_3/20240207133102.png)
+
 3. 我們檢查看看是否可以訪問 `/files/` 這個資料夾內容，結論是可以。
-   `http://natas2.natas.labs.overthewire.org/files/` ![](/articles/01_Wargames/00_OverTheWire/00_Natas/00_Level_0_To_Level_3/20240207133149.png)
+
+    `http://natas2.natas.labs.overthewire.org/files/` ![](/articles/01_Wargames/00_OverTheWire/00_Natas/00_Level_0_To_Level_3/20240207133149.png)
+
 4. 點入 `user.txt` 就可以看到答案。
 
 ### Thoughts
@@ -131,12 +138,17 @@ website: [http://natas3.natas.labs.overthewire.org](http://natas3.natas.labs.ove
 ### Solve
 
 > [!NOTE]
+>
 > 本題狀況跟 Level 2 一樣，只是要找的地方不同。
 
 > [!TIP]
+>
 > 注意他的原始碼提到 `Not even Google will find it this time...`
+>
 > 在什麼情況什麼設定下，Google 都無法找到頁面呢？
+>
 > 那自然就是設定了 `robots.txt` 的狀況囉！
+>
 > ![](/articles/01_Wargames/00_OverTheWire/00_Natas/00_Level_0_To_Level_3/20240207133937.png)
 
 1. 同 Level 2 解法。

@@ -101,7 +101,9 @@ website: [http://natas10.natas.labs.overthewire.org/](http://natas10.natas.labs.
 ### Solve
 
 > [!NOTE]
+>
 > 這一題跟上一題一樣，但是要找到另一種 payload 才能處理。
+>
 > 這邊給個提示：**grep -i** 的用法很重要。
 
 1. 跟 Level 9 相同，只是多限制了 ;/& 的使用，不能在 payload 中出現上述兩個字元。
@@ -121,6 +123,7 @@ website: [http://natas10.natas.labs.overthewire.org/](http://natas10.natas.labs.
 這個最好的方法還是設定白名單，比較能保證不會出事。
 
 > [!DANGER] 白名單太多不好設定？
+>
 > 那一開始就不要有可以下系統 command 的寫法就好了..
 
 ### Answer

@@ -197,6 +197,7 @@ echo $encrypt_cookie; # OUTPUT: MGw7JCQ5OC04PT8jOSpqdmk3LT9pYmouLC0nICQ8anZpbS4q
 ### Tutorial
 
 > [!WARNING] tl;dr
+>
 > 教學部分比較長，所以如果沒興趣，可以直接跳至 [Thoughts](#skip-from-tldr)
 
 本題的難度其實並不難，反倒是需要很多針對 XOR 的基本概念，以及一點逆向工程的思維。

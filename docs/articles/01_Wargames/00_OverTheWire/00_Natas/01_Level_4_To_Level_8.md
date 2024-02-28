@@ -21,12 +21,16 @@ website: [http://natas4.natas.labs.overthewire.org/](http://natas4.natas.labs.ov
 
 > [!NOTE]
 > 本題可以使用很多方法處理。
+>
 > 可以用 `cURL`、`Burp Suite` 等等
+>
 > 但是我選用 Chrome 的 extention: [ModHeader](https://chromewebstore.google.com/detail/modheader-modify-http-hea/idgpnmonknjnojddfkpgkljpfnnfcklj?pli=1) > ![](/articles/01_Wargames/00_OverTheWire/00_Natas/01_Level_4_To_Level_8/20240207141158.png)
 
 1. 看到畫面，得知訊息：`Access disallowed. You are visiting from "" while authorized users should come only from "http://natas5.natas.labs.overthewire.org/"`，可以了解到他有在解析上一個網站的 url。
 2. 藉由 [ModHeader](https://chromewebstore.google.com/detail/modheader-modify-http-hea/idgpnmonknjnojddfkpgkljpfnnfcklj?pli=1) 可以進行修改。本次修改目標是 `Header` 中的 `Referer`。
-   ![](/articles/01_Wargames/00_OverTheWire/00_Natas/01_Level_4_To_Level_8/20240207141444.png)
+
+    ![](/articles/01_Wargames/00_OverTheWire/00_Natas/01_Level_4_To_Level_8/20240207141444.png)
+
 3. 重新整理後，即可得到答案。
 
 ### Thoughts
@@ -61,16 +65,24 @@ website: [http://natas5.natas.labs.overthewire.org/index.php](http://natas5.nata
 ### Solve
 
 1. 看到訊息，知道這邊開始有驗證使用者身份（是否登入）。先檢查一下 `原始碼` 及 `HTTP 封包`，看一下怎麼驗證的：
-   ![](/articles/01_Wargames/00_OverTheWire/00_Natas/01_Level_4_To_Level_8/20240207142050.png)
+
+    ![](/articles/01_Wargames/00_OverTheWire/00_Natas/01_Level_4_To_Level_8/20240207142050.png)
+
 2. 這邊他的驗證方式似乎是直接使用 `Cookie` 去驗證使用者是否登入，所以就去更改 `Cookie`。
    要改 `Cookie` 可以使用 `ModHeader` 去處理，或是用 `Dev tool` 的 `Application` 標籤下 `Cookie` 資料表中，選擇網址 (此處為 `http://natas5.natas.labs.overthewire.org`) 去看到瀏覽器儲存的 `Cookie`。
-   ![](/articles/01_Wargames/00_OverTheWire/00_Natas/01_Level_4_To_Level_8/20240207142432.png)
+
+    ![](/articles/01_Wargames/00_OverTheWire/00_Natas/01_Level_4_To_Level_8/20240207142432.png)
+
 3. 確認過~~眼神~~ `Cookie`，我們就去動手修改 `loggedin` 欄位的值，這邊拿到是 `0`，那我們就試著變成 `1`。
-   ![](/articles/01_Wargames/00_OverTheWire/00_Natas/01_Level_4_To_Level_8/20240207142653.png)
+
+    ![](/articles/01_Wargames/00_OverTheWire/00_Natas/01_Level_4_To_Level_8/20240207142653.png)
+
 4. 重新整理過後，就可以拿到答案。
 
 > [!TIP] 提示
+>
 > 我們可以利用 `Dev tool` 來查看原始碼（被 [瀏覽器渲染](https://diarysophie.gitbooks.io/web-development/content/chapter5.html) 後的結果 `Elements` 以及原始碼 `Source`）。
+>
 > 要看 HTTP 封包，可以使用 `Network` 標籤。如果沒看到，重新整理就可以看到了。
 
 ### Thoughts
@@ -84,6 +96,7 @@ website: [http://natas5.natas.labs.overthewire.org/index.php](http://natas5.nata
 因此要特別注意網站身份驗證與權限控制的方式。
 
 > [!IMPORTANT] 值得注意
+>
 > 不過這在網站攻防上還是值得學習，因為我們有些資訊的確會放在 `Cookie` 裡面，如果有用到 `XSS` 攻擊手法，也許可以撈出來（前提是不能被設定為 `HTTP-Only`）。
 
 ### Answer
@@ -168,7 +181,8 @@ if(array_key_exists("submit", $_POST)) {
 ```
 
 4. 在第 18 行注意到他引入了一個 `.inc` 檔案；然後再 第 21 行有一個判斷式，試圖比較變數 `secret` 和從 `POST` 方法得到的資料 `secret` 是否一致。
-   但是看來看去沒有看到任何的變數 `secret`，所以看起來應該是放在 `inlcudes/secret.inc` 裡面了。
+
+    但是看來看去沒有看到任何的變數 `secret`，所以看起來應該是放在 `inlcudes/secret.inc` 裡面了。
 
 ```php:line-numbers=18
 include "includes/secret.inc"; // [!code focus]
@@ -193,6 +207,8 @@ if(array_key_exists("submit", $_POST)) {
 若是對程式語言都不熟的人...恐怕要回頭去練習程式設計才行；至少要能看懂 `if/else` 的結構，不然的話應該只能抓頭了...
 
 ![圖片出自`https://img.ltn.com.tw/Upload/news/600/2015/04/15/php0juDSZ.jpg`](/articles/01_Wargames/00_OverTheWire/00_Natas/01_Level_4_To_Level_8/20240207145648.png)
+
+> 圖片出自`https://img.ltn.com.tw/Upload/news/600/2015/04/15/php0juDSZ.jpg`
 
 ### Answer
 
@@ -219,12 +235,17 @@ website: [http://natas7.natas.labs.overthewire.org/](http://natas7.natas.labs.ov
 ### Solve
 
 1. 檢查原始碼，以及按鈕按按看，會發現他的頁面控制是使用 `Query` 。
-   `/index.php?page=home` --
-   ![](/articles/01_Wargames/00_OverTheWire/00_Natas/01_Level_4_To_Level_8/20240207150920.png)
-   `/index.php?page=about` --
-   ![](/articles/01_Wargames/00_OverTheWire/00_Natas/01_Level_4_To_Level_8/20240207150930.png)
+
+    `/index.php?page=home` --
+    ![](/articles/01_Wargames/00_OverTheWire/00_Natas/01_Level_4_To_Level_8/20240207150920.png)
+
+    `/index.php?page=about` --
+    ![](/articles/01_Wargames/00_OverTheWire/00_Natas/01_Level_4_To_Level_8/20240207150930.png)
+
 2. 我們嘗試看看 `?page=` 不要帶任何參數，結果出現錯誤訊息。
-   ![](/articles/01_Wargames/00_OverTheWire/00_Natas/01_Level_4_To_Level_8/20240207151049.png)
+
+    ![](/articles/01_Wargames/00_OverTheWire/00_Natas/01_Level_4_To_Level_8/20240207151049.png)
+
 3. 我們可以分析錯誤碼，發現我們的參數是 php 會去 include 的檔案，所以只要在參數上帶入我們要查看的檔案，就可以攻擊成功。
 
 ```
@@ -234,7 +255,8 @@ Warning: include(): Failed opening '' for inclusion (include_path='.:/usr/share/
 ```
 
 4. 但是我們要查找的檔案放在哪呢？這時候看了一下原始碼（或是你看開頭的說明也可以），會看到提示。
-   ![](/articles/01_Wargames/00_OverTheWire/00_Natas/01_Level_4_To_Level_8/20240207151601.png)
+
+    ![](/articles/01_Wargames/00_OverTheWire/00_Natas/01_Level_4_To_Level_8/20240207151601.png)
 
 5. 把提示放入 `?page=` 後面，就會得到答案。
 
