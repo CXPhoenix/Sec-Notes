@@ -2,4 +2,4 @@
 
 ## Solved
 
--   [Holesome Birthday Party](./00_Holesome_Birtheday_Party.md) (100p)
+-   [Holesome Birthday Party](./00_WEB:_Holesome_Birtheday_Party.md) (100p)
