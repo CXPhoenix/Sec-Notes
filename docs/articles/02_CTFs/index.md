@@ -6,5 +6,5 @@ outline: [2, 3]
 
 ## Past CTFs
 
--   [UMass CTF 2024](./00_Online_Challenge/UMass_CTF_2024/index.md)
+-   [UMass CTF 2024](./00_Online_Challenge/00_UMass_CTF_2024/index.md)
 -   [GreyCatCTF 2024](./00_Online_Challenge/01_GreyCatCTF_2024/index.md)
